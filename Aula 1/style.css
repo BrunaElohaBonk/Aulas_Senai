@@ -1,0 +1,38 @@
+
+*{ /* se aplica para todos */
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fonte_rosa{ /* se aplica para quantos quiser */
+    color: plum;
+    background-color: gray;
+    font-size: 40px;
+} 
+
+.fonte_vermelha{
+    color: red;
+}
+
+#titulo-3{ /* se aplica ao "id" (somente para um) */
+    color: aqua;
+    background-color: gray;
+    font-size: 50px;
+}
+
+div p{ /* se aplica a tag colocada (nesse caso "p") */
+    color: lawngreen;
+    font-size: 30px;
+}
+
+.marquinhos:hover{
+    rotate: 2520deg; /* quanto maior o rotate mais vezes vai girar */
+    transition: 5s;
+}
+
+.marquinhos{ /* se passar o mouse ele gira */
+    width: 300px;
+    height: 150px;
+}
