@@ -1,1 +1,4 @@
 aula de github
+-- git add .
+-- git commit -m "o que eu fiz"
+-- git push
