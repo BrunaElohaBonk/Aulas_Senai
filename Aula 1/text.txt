@@ -1,4 +1,13 @@
 aula de github
+
+Comitar:
 -- git add .
 -- git commit -m "o que eu fiz"
 -- git push
+
+Clonar:
+--No promp de comando -> cd desktop -> git clone 'repositório' -> cd 'pasta clonada' -> code .
+
+Configurar:
+--git config --global user.name "Nome"
+--git config --global user.email "email"

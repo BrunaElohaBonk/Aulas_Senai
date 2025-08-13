@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.quadrado_azul{
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+}   
+
+.linha-quadrado-azul{
+    height: 33.3%;
+}
+
+.quadrado_laranja{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+}
+
+.l1{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.l2{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.l3{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.container{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.meio{
+    justify-content: center;
+}
+
+.direita{
+    justify-content: right;
+}
+
+.esquerda{
+    justify-content: left;
+}
+
+.opostos{
+    justify-content: space-between;
+}
