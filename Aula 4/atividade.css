@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+.flex{
+    display: flex;
+}
+
+.pai{
+    height: 100vh;
+}
+
+.logo{
+    height: 50px;
+    width: 200px;
+    margin: 25px;
+}
+
+.linha-borda{
+    display: flex;
+    justify-content: space-between;
+    height: 10.5%;
+}
+
+.linha-meio{
+    display: flex;
+    justify-content: space-between;
+    height: 39.5%;
+}
+
+.quadrado-azul{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(6, 89, 184);
+    top: 0;
+    display: flex;
+}
+
+.texto{
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+
+.alinhar-texto{
+    margin: 100px;
+}
+
+.w-50{
+    width: 50%;
+    height: 100%;
+}
+
+.w-2{
+    width: 20%;
+    height: 100%;
+}
+
+.w-6{
+    width: 60%;
+    height: 100%;
+    align-items: center;
+}
+
+.right{
+    justify-content: right;
+    align-items: center;
+}
+
+.centralizar{ /*centralizar no meio do meio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
