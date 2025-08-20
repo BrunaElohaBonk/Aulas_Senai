@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        const nome = "Bruna";
+        const idade = 19
+        let meninas = [
+            "Bruna",
+            "Thais", 
+            "Helo"
+        ]
+
+        console.log("O nome é " + nome + " e a idade é " + idade)
+
+        const obj = {
+            nome: "Helo",
+            idade: 17,
+            trabalho: "Bosch",
+            familia: {
+                pai: "Jorge",
+                mae: "Vanessa"
+            }
+        }
+
+        console.log(obj.familia)
+
+        function soma(x, y){
+            return x + y;
+        }
+
+        const somar = function (a, b){
+            return a + b;
+        }
+
+        const somaArrow = (a, b) => a + b
+
+        console.log("A soma é " + somar(5, 10));
+    </script>
+
+<!--------------------------------------------------------------------------------->
+
+    <h1 id="el1">Titulo</h1>
+    <input type="text" id="el2">
+    <button onclick="recebaTexto()">Enviar</button>
+
+<!--------------------------------------------------------------------------------->
+
+    <br><br><br>
+    <span>Escolha a cor:</span>
+    <input type="color" id="recebaCor">
+    <br>
+    <div class="quadrado ok" id="quadrado"></div>
+    <br>
+    <button onclick="trocaCor()">Trocar cor</button>
+
+    <script src="script.js"></script> <!--fica sempre no final-->
+</body>
+</html>

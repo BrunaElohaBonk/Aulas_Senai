@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.quadrado {
+    height: 300px;
+    width: 300px;
+}
+
+.ok {
+    background-color: green;
+}
+
+.bad {
+    background-color: red;
+}
