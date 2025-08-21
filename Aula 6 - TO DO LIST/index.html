@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="view flex container cor-fundo">
+        <div class="quadrado flex container">
+            <br>
+            <div class="titulo flex">To-Do List</div>
+            <br>
+            <div class="flex">
+                <input class="input" type="text" placeholder="Digite uma tarefa:" id="campoTarefa">
+                <button class="botao" onclick="adicionarTarefa()">Adicionar</button>
+            </div>
+            <ul id="lista-tarefas"></ul> <!--lista de tarefas-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
