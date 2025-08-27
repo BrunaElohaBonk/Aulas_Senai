@@ -1,0 +1,9 @@
+Instruções para inicializar o react:
+- Terminal cmd
+- npm create vite@latest
+- Colocar o nome do projeto/pasta, ex: AulaReact
+- Selecionar React
+- Selecionar JavaScript
+- cd NomeDoProjeto
+- npm install
+- npm run dev
