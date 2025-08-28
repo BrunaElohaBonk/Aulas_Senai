@@ -9,10 +9,10 @@ function App() {
   // const [texto, setTexto] = useState("")
 
   // Exercício 1: controla a visibilidade do texto
-  const [visivel, setVisivel] = useState(true)
+  const [visivel, setVisivel] = useState(true) //Cria uma variável de estado chamada visivel. "setVisivel" é a função usada para alterar o valor.
 
   // Exercício 2: controla a cor de fundo da div
-  const [corFundo, setCorFundo] = useState("lightgray")
+  const [corFundo, setCorFundo] = useState("lightgray") //Define a cor de fundo de uma div.
 
   // Exercício 3: conta cliques e atualiza contador a cada 10
   const [cliques, setCliques] = useState(0)
@@ -22,7 +22,7 @@ function App() {
   const [nome, setNome] = useState("")
 
   // Função que inverte o valor de "visivel"
-  const alterarVisibilidade = () => {
+  const alterarVisibilidade = () => { //Se for true, vira false; se for false, vira true.
     setVisivel(!visivel)
   }
 
@@ -52,7 +52,7 @@ function App() {
       <button onClick={alterarVisibilidade}>Alterar visibilidade</button>
       <br />
       {/* Renderiza o texto somente se "visivel" for true */}
-      {visivel && (
+      {visivel && ( //Se visivel for true, o texto aparece. Se for false, o texto não é renderizado.
         <span>
           O sol ainda não havia nascido completamente, mas a luz dourada já tocava as copas das árvores. 
           As ruas estavam vazias, e o silêncio da manhã parecia conversar com quem ousasse escutá-lo. Era um 
@@ -68,7 +68,7 @@ function App() {
       <br />
       <button onClick={alterarCor}>Alterar cor de fundo</button>
       <div style={{ backgroundColor: corFundo, padding: "20px", marginTop: "10px" }}>
-        Esta é a div com cor dinâmica.
+        Esta é a div S2
       </div>
       <br /><br />
 
@@ -90,7 +90,7 @@ function App() {
       <input 
         type="text" 
         placeholder='Digite seu nome: '
-        onChange={(e) => setNome(e.target.value)}
+        onChange={(e) => setNome(e.target.value)} // e.target.value é o que foi digitado.
       />
       <br />
       <span>{nome && `Bem-vindo, ${nome}!`}</span>
