@@ -28,7 +28,7 @@ function App() {
 
   // Função que alterna a cor entre lightgray e lightblue
   const alterarCor = () => {
-    const novaCor = corFundo === "lightgray" ? "lightblue" : "lightgray"
+    const novaCor = corFundo === "lightgray" ? "lightblue" : "lightgray" // semelhante ao if else. ? = if, : = else.
     setCorFundo(novaCor)
   }
 
