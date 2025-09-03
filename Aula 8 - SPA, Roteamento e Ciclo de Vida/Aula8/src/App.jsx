@@ -49,16 +49,16 @@ function App() {
         1 - Faça um botão que altere a visibilidade de um texto dentro da página. visível ou escondido.
       </span>
       <br />
-      <button onClick={alterarVisibilidade}>Alterar visibilidade</button>
+      <button onClick={alterarVisibilidade} className='button'>Alterar visibilidade</button>
       <br />
       {/* Renderiza o texto somente se "visivel" for true */}
-      {visivel && ( //Se visivel for true, o texto aparece. Se for false, o texto não é renderizado.
+      {visivel &&  //Se visivel for true, o texto aparece. Se for false, o texto não é renderizado.
         <span>
           O sol ainda não havia nascido completamente, mas a luz dourada já tocava as copas das árvores. 
           As ruas estavam vazias, e o silêncio da manhã parecia conversar com quem ousasse escutá-lo. Era um 
           instante raro, onde tudo parecia possível — como se o mundo respirasse fundo antes de começar mais um dia.
         </span>
-      )}
+      }
       <br /><br />
 
       {/* Exercício 2 */}
@@ -66,7 +66,7 @@ function App() {
         2 - Faça um botão que altere a cor de fundo de uma div
       </span>
       <br />
-      <button onClick={alterarCor}>Alterar cor de fundo</button>
+      <button onClick={alterarCor} className='button'>Alterar cor de fundo</button>
       <div style={{ backgroundColor: corFundo, padding: "20px", marginTop: "10px" }}>
         Esta é a div S2
       </div>
@@ -77,7 +77,7 @@ function App() {
         3 - Exiba um contador que a cada dez cliques atualiza de 1 em 1 na tela.
       </span>
       <br />
-      <button onClick={contarCliques}>Clique aqui!</button>
+      <button onClick={contarCliques} className='button'>Clique aqui!</button>
       <br />
       <span>Contador: {contador}</span>
       <br /><br />
