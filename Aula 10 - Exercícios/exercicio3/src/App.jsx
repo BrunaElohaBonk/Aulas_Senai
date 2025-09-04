@@ -21,8 +21,10 @@ function App() {
 
   return (
     <>
-      <button onClick={somar} className='button'>Adicionar 1</button>
-      <button onClick={subtrair} className='button'>Diminuir 1</button>
+      <span className='titulo'>Contador com efeito colateral</span>
+      <br /><br />
+      <button onClick={subtrair} className='button'>-</button>
+      <button onClick={somar} className='button'>+</button>
       <br /><br />
       <span>O contador agora está em {contador}</span>
     </>
