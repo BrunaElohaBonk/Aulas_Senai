@@ -1,0 +1,7 @@
+3 - Qual a diferença entre git commit e git push?
+
+- git commit:
+    Salva as alterações para enviar no commit.
+
+- git push:
+    Sobe as alterações para o repositório remoto.
