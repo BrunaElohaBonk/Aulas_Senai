@@ -1,0 +1,12 @@
+5 - Você clonou um repositório remoto, irá criar uma branch chamada
+feature/login para fazer alguns commits. Escreva os comandos e passo a passo
+necessários para:
+a - Enviar essa branch para o repositório remoto.
+    git checkout -b feature/login
+    git commit -m "feat: login"
+    git checkout main
+    git merge feature/login
+
+b - Criar um pull request no GitHub.
+    É feito via interface do GitHub:
+    - Create pull request

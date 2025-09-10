@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.l1{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.l2{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.l3{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.linha{
+    height: 33.3%;
+}
+
+.direita{
+    justify-content: right;
+}
+
+.esquerda{
+    justify-content: left;
+}
+
+.meio{
+    justify-content: center;
+}
+
+.opostos{
+    justify-content: space-between;
+}
+
+.quadrado-azul{
+    height: 106px;
+    width: 106px;
+    background-color: lightskyblue;
+}
+
+.quadrado-amarelo{
+    height: 106px;
+    width: 106px;
+    background-color: yellow;
+}
+
+.retangulo-branco{
+    height: 33.3vh;
+    width: 100%;
+    background-color: white;
+}
+
+.retangulo-azul{
+    height: 33.3vh;
+    width: 50%;
+    background-color: lightskyblue;
+} 
+
+.retangulo-amarelo{
+    height: 33.3vh;
+    width: 50%;
+    background-color: yellow;
+} 
+
+.retangulo-meio{
+    height: 33.3vh;
+    width: 39%;
+    background-color: lightskyblue;
+} 
+
+.retangulo-borda{
+    height: 33.3vh;
+    width: 30.5%;
+    background-color: lightskyblue;
+}
