@@ -1,3 +1,4 @@
 1 - Em que situações você usaria o arquivo .gitignore? Cite exemplos práticos e 
 explique a utilidade deste arquivo.
 
+Usaria em sutuações que o git não devesse se preocupar com certos comandos/extensões.
