@@ -1,0 +1,5 @@
+2 - O que é um pull request no GitHub? Qual a importância dele para projetos
+colaborativos?
+
+É um pedido pra juntar sua branch com outra. Seu principal objetivo é revisar 
+e discutir com a equipe sobre o código, se estiver tudo ok, aprova e faz o merge.
