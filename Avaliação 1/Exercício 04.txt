@@ -1,0 +1,10 @@
+4 – O que são conventional commits e conventional branches? Para qual finalidade
+eles seriam utilizados e resolveriam qual tipo de problema?
+
+- conventional commits:
+    É um padrão de escrita de mensagens de commit. Isso ajuda muito em CI/CD,
+    changelogs automáticos, e leitura fácil do histórico.
+
+- conventional branches:
+    Da mesma forma que nos commits, podemos também padronizar o nome das
+    branches, para facilitar o processo de desenvolvimento e controle.
