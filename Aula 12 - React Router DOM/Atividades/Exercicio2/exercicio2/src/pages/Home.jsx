@@ -4,7 +4,7 @@ export const Home = () => {
     return (
         <>
             <h1>Página Home</h1>
-            <Link  to={'/user'}>Navegar para User</Link>
+            <Link  to={'/produtos'}>Navegar para Produtos</Link>
         </>        
     )
 }
