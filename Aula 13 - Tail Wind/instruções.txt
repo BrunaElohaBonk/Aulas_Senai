@@ -1,0 +1,14 @@
+terminal cmd
+npm create vite@latest
+selecione React
+selecione JavaScript
+cd nomeDaPasta
+npm i
+npm install tailwindcss @tailwindcss/vite
+no vite.config.js colocar:
+    import tailwindcss from '@tailwindcss/vite'
+    tailwindcss(),
+no index.css deixar apenas:
+    @import "tailwindcss";
+no app.css apagar tudo
+npm run dev
