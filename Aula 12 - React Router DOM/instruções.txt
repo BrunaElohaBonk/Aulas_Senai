@@ -2,6 +2,7 @@ terminal cmd
 npm create vite@latest
 selecione React
 selecione JavaScript
-npm i react-router-dom
 cd nomeDaPasta
+npm i
+npm i react-router-dom
 npm run dev
