@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Botao } from "./components/Botao"
 
 function Pessoa({nome, sobrenome, idade}){
   return(
@@ -42,6 +43,10 @@ function App() {
       }
 
       <Pessoa nome = "Bruna Elohá" sobrenome = 'Bonk' idade = '19'/>
+
+      <Botao cor="green" conteudo="Login" altura="50px" largura="200px" />
+      <br /><br />
+      <Botao cor="blue" conteudo="Cadastro" altura="50px" largura="100px" />
     </>
   )
 }

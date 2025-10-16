@@ -1,0 +1,8 @@
+npm create vite@latest
+cd projeto
+npm install tailwindcss @tailwindcss/vite
+
+no vite.config importar o tailwindcss
+
+excluir tudo do index .css e colocar:
+@import "tailwindcss";
