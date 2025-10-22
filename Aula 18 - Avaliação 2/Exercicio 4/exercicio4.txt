@@ -1,0 +1,3 @@
+4 - Identifique o problema no código abaixo e marque a alternativa que exibe o problema do código.
+
+C - O useEffect depende de contador e, ao atualizá-lo dentro dele, causa um loop de renderizações.

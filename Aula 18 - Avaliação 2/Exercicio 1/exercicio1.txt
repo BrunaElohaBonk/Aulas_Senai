@@ -1,0 +1,3 @@
+1 - O que acontece se você não passar o segundo parâmetro ([]) no useEffect?
+
+Indica que o efeito deve ser executado apenas uma vez, na montagem do componente.

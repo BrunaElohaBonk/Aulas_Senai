@@ -1,0 +1,1 @@
+2 - Explique o conceito de props no React. Por que é importante que componentes recebam dados através das props?
