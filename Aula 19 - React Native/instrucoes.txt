@@ -1,0 +1,5 @@
+npx create-expo-app@latest
+y
+nome_projeto
+cd nome_projeto
+npm run web
