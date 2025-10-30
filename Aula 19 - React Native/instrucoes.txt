@@ -2,4 +2,5 @@ npx create-expo-app@latest
 y
 nome_projeto
 cd nome_projeto
+npm i
 npm run web
