@@ -4,7 +4,9 @@
 // export default function HomeScreen() {
 
 //   const [user, setUser] = useState("")
+//   const [email, setEmail] = useState("")
 //   const [senha, setSenha] = useState("")
+//   const [confirmSenha, setConfirmSenha] = useState("")
 
 //   return (
 //     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -94,13 +96,33 @@
 
 
 
-import { useState } from "react";
-import { StyleSheet, Text, TextInput, TouchableOpacity, View, Button, Image } from "react-native"
+import { useEffect, useState } from "react";
+import { StyleSheet, Text, TextInput, TouchableOpacity, View, Button, Image, Dimensions, Alert } from "react-native"
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import { app } from '../firebaseConfig'
 
 export default function HomeScreen() {
 
   const [user, setUser] = useState("")
+  const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
+  const [confirmSenha, setConfirmSenha] = useState("")
+  const screenWindth = Dimensions.get("window").width;
+
+  const auth = getAuth(app)
+    
+    const sigUp = () => {
+      if(senha === confirmSenha){
+        return createUserWithEmailAndPassword(auth, email, senha)
+      }
+      else {
+        return alert("Erro!")
+      }
+    }
+
+  useEffect(() => {
+    console.log(user, email, senha, confirmSenha)
+  }, [user, email, senha, confirmSenha])
 
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -115,17 +137,17 @@ export default function HomeScreen() {
             <TextInput style={styles.caixa_texto} placeholder="   Usuário" onChangeText={user => setUser(user)}></TextInput>
           </View>
           <View style={{ flexDirection: "row" }}>
-            <TextInput style={styles.caixa_texto} placeholder="   Email" onChangeText={senha => setSenha(senha)}></TextInput>
+            <TextInput style={styles.caixa_texto} placeholder="   Email" onChangeText={email => setEmail(email)}></TextInput>
           </View>
           <View style={{ flexDirection: "row" }}>
-            <TextInput style={styles.caixa_texto} placeholder="   Senha" onChangeText={senha => setSenha(senha)}></TextInput>
+            <TextInput style={styles.caixa_texto} placeholder="   Senha" secureTextEntry onChangeText={senha => setSenha(senha)}></TextInput>
           </View>
           <View style={{ flexDirection: "row" }}>
-            <TextInput style={styles.caixa_texto} placeholder="   Confirme a senha" onChangeText={senha => setSenha(senha)}></TextInput>
+            <TextInput style={styles.caixa_texto} placeholder="   Confirme a senha" secureTextEntry onChangeText={confirmSenha => setConfirmSenha(confirmSenha)}></TextInput>
           </View>
         </View>
         <View style={{height:'7%', alignItems:"center"}}>
-          <TouchableOpacity style={styles.botao}>
+          <TouchableOpacity style={styles.botao} onPress={() => sigUp()}>
             <View>
               <Text style={{color: "#FFFFFF"}}>Cadastrar</Text>
             </View>
