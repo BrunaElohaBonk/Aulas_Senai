@@ -36,7 +36,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   bem_vindo: {
-    fontSize: 80,
+    fontSize: 60,
     color: "#8A8A8A",
     fontWeight: "bold",
     justifyContent: "center",
