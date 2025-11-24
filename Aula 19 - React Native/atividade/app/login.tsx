@@ -16,18 +16,17 @@ export default function Login() {
 
   const signIn = async () => {
     await signInWithEmailAndPassword(auth, email, senha)
-    router.navigate('/home')
+    router.navigate('/cadastro')
   }
 
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <View style={styles.fundo}>
-        <View style={{height: '10%'}}></View>
-        <View style={{height: '5%', justifyContent:"center", alignItems: "center"}}>
+        <View style={{justifyContent:"center", alignItems: "center"}}>
           <Text style={styles.login}>Login</Text>
         </View>
         <View style={{height: '5%'}}></View>
-        <View style={{height: '40%', justifyContent: "center", alignItems:"center"}}>
+        <View style={{height: '30%', justifyContent: "center", alignItems:"center"}}>
           <View style={{ flexDirection: "row" }}>
             <TextInput style={styles.caixa_texto} placeholder="   Usuário" onChangeText={user => setEmail(user)}></TextInput>
           </View>
@@ -35,7 +34,7 @@ export default function Login() {
             <TextInput style={styles.caixa_texto} secureTextEntry placeholder="   Senha" onChangeText={senha => setSenha(senha)}></TextInput>
           </View>
         </View>
-        <View style={{height:'7%', alignItems:"center"}}>
+        <View style={{height:'5%', alignItems:"center"}}>
           <TouchableOpacity style={styles.botao} onPress={signIn}>
             <View>
               <Text style={{color: "#FFFFFF"}}>Entrar</Text>
@@ -44,18 +43,29 @@ export default function Login() {
         </View>
         <View style={{height:'17%', alignItems:"center"}}>
           <Text style={{color: "#8A8A8A", margin: 15, textDecorationLine: 'underline'}}>Esqueceu a senha?</Text>
-          <View style={{height: '3%'}}></View>
-          <Link href={'/'} style={{color: "#8A8A8A", textDecorationLine: 'underline'}}>Cadastrar</Link>
-        </View>
-        <View style={{height: '2%'}}></View>
-        <View style={{height:'15%', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
-          <View style={{flexDirection:'row', alignItems: 'center', marginRight: 10}}>
-            <Image style={styles.imagem} source={require('../assets/images/Google.png')}/>
-            <Text style={{color: "#8A8A8A", textDecorationLine: 'underline'}}> Google</Text>
-          </View>
-          <View style={{flexDirection: 'row', alignItems:'center', marginLeft: 10}}>
-            <Image style={styles.imagem} source={require('../assets/images/Facebook.png')}/>
-            <Text style={{color: "#8A8A8A", textDecorationLine: 'underline'}}> Facebook</Text>
+          <View style={{height: '70%'}}></View>
+          <View style={{height:'25%', justifyContent: 'center', alignItems: 'center'}}>
+            <Text style={{fontStyle: 'italic', color: '#8A8A8A'}}>Ou entre com:</Text>
+            <View style={{height: '2%'}}></View>
+            <View style={{ flexDirection: 'row' }}>
+              <View style={{flexDirection:'row', alignItems: 'center', marginRight: 10}}>
+                <Image style={styles.imagem} source={require('../assets/images/Google.png')}/>
+                <Text style={{color: "#8A8A8A", textDecorationLine: 'underline'}}> Google</Text>
+              </View>
+              <View style={{flexDirection: 'row', alignItems:'center', marginLeft: 10}}>
+                <Image style={styles.imagem} source={require('../assets/images/Facebook.png')}/>
+                <Text style={{color: "#8A8A8A", textDecorationLine: 'underline'}}> Facebook</Text>
+                </View>
+            </View>
+            <View style={{height: '100%'}}></View>
+            <View style={{flexDirection: 'row'}}>
+              <Text style={{fontStyle: 'italic', color: '#8A8A8A'}}>Não tem uma conta?  </Text>
+              <Link href={'/cadastro'} style={{color: "#8A8A8A", textDecorationLine: 'underline'}}>Cadastrar</Link>
+            </View>
+            <View style={{height: '80%'}}></View>
+            <View>
+              <Link href={'/'} style={{color: "#8A8A8A", textDecorationLine: 'underline'}}>Voltar para a tela inicial</Link>
+            </View>
           </View>
         </View>
       </View>
@@ -92,16 +102,13 @@ const styles = StyleSheet.create({
     height: 550,
     width: 400,
     borderRadius: 30,
-    justifyContent: "center",
     flexDirection: "column"
   },
 
   login: {
     fontSize: 20,
     color: "#8A8A8A",
-    fontWeight: "bold",
-    marginTop: 35,
-    justifyContent: "center",
-    alignItems: "center"
+    marginTop: 60,
+    fontWeight: "bold"
   }
 });
