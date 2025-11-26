@@ -16,7 +16,7 @@ export default function Login() {
 
   const signIn = async () => {
     await signInWithEmailAndPassword(auth, email, senha)
-    router.navigate('/cadastro')
+    router.navigate('/funcoes')
   }
 
   return (
