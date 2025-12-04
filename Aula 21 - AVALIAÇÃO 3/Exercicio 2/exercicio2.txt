@@ -1,0 +1,3 @@
+2 - Analise o erro no código abaixo:
+
+B - O estado está sendo inicializado com uma string ao invés de um useState.

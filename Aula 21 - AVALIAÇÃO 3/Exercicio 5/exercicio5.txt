@@ -1,0 +1,1 @@
+5 - Explique a diferença entre o JavaScript e o TypeScript utilizando exemplos.

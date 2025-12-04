@@ -1,0 +1,3 @@
+3 - Identifique o problema de estilo no código:
+
+D - A classe title não está sendo aplicada corretamente.
